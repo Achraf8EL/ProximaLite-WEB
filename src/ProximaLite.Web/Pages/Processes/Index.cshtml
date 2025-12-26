@@ -1,0 +1,28 @@
+@page
+@model ProximaLite.Web.Pages.Processes.IndexModel
+
+<h1>Processes</h1>
+
+<p>
+    <a asp-page="Create">Create new process</a>
+</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>CreatedAt (UTC)</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var p in Model.Processes)
+{
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Name</td>
+            <td>@p.CreatedAt</td>
+        </tr>
+}
+    </tbody>
+</table>
