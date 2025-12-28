@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/ProximaLite.Web.props" />
+</Project>

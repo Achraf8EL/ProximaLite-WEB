@@ -1,0 +1,17 @@
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.csproj.AssemblyReference.cache
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.AssemblyInfoInputs.cache
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.AssemblyInfo.cs
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Infrastructure.deps.json
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Infrastructure.runtimeconfig.json
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Infrastructure.dll
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Infrastructure.pdb
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Domain.dll
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/bin/Debug/net7.0/ProximaLite.Domain.pdb
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.csproj.CopyComplete
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.dll
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/refint/ProximaLite.Infrastructure.dll
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.pdb
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ProximaLite.Infrastructure.genruntimeconfig.cache
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/Debug/net7.0/ref/ProximaLite.Infrastructure.dll

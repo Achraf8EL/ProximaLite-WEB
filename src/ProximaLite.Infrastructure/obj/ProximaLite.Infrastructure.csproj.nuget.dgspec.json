@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/ProximaLite.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/ProximaLite.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/ProximaLite.Domain.csproj",
+        "projectName": "ProximaLite.Domain",
+        "projectPath": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/ProximaLite.Domain.csproj",
+        "packagesPath": "/Users/achrafelmessaoudi/.nuget/packages/",
+        "outputPath": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/achrafelmessaoudi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/ProximaLite.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/ProximaLite.Infrastructure.csproj",
+        "projectName": "ProximaLite.Infrastructure",
+        "projectPath": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/ProximaLite.Infrastructure.csproj",
+        "packagesPath": "/Users/achrafelmessaoudi/.nuget/packages/",
+        "outputPath": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/achrafelmessaoudi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/ProximaLite.Domain.csproj": {
+                "projectPath": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/ProximaLite.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

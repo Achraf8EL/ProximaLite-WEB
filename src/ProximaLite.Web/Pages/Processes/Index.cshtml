@@ -20,7 +20,9 @@
 {
         <tr>
             <td>@p.Id</td>
-            <td>@p.Name</td>
+            <td>
+                <a asp-page="Details" asp-route-id="@p.Id">@p.Name</a>
+            </td>
             <td>@p.CreatedAt</td>
         </tr>
 }

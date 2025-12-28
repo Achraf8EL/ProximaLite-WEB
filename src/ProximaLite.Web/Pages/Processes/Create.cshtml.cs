@@ -17,9 +17,7 @@ public class CreateModel : PageModel
     [BindProperty]
     public Process Process { get; set; } = new();
 
-    public void OnGet()
-    {
-    }
+    public void OnGet() { }
 
     public async Task<IActionResult> OnPostAsync()
     {

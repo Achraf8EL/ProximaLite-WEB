@@ -1,18 +1,18 @@
-namespace ProximaLite.Domain.Entities
+namespace ProximaLite.Domain.Entities;
+
+public class Step
 {
-    public class Step
-    {
-        public int Id {get;set;}
-        public int ProcessId { get; set; }
+    public int Id { get; set; }
 
-        public string Name { get; set; } = string.Empty;
+    public int ProcessId { get; set; }
 
-        public int DurationMin { get; set; }
+    public Process? Process { get; set; }
 
-        public decimal Yield { get; set; } // Represented as a percentage (e.g., 95.5 for 95.5%)
+    public string Name { get; set; } = string.Empty;
 
-        public decimal CostEuro { get; set; } // Cost associated with this step
+    public int DurationMin { get; set; }
 
+    public decimal Yield { get; set; }
 
-    }
+    public decimal CostEuro { get; set; }
 }

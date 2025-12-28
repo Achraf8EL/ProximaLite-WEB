@@ -4,17 +4,18 @@
 <h1>Create process</h1>
 
 <form method="post">
-    <div>
-        <label>Name</label>
-        <input asp-for="Process.Name" />
-    </div>
+  <div>
+    <label asp-for="Process.Name"></label>
+    <input asp-for="Process.Name" />
+    <span asp-validation-for="Process.Name"></span>
+  </div>
 
-    <div>
-        <label>Description</label>
-        <textarea asp-for="Process.Description"></textarea>
-    </div>
+  <div>
+    <label asp-for="Process.Description"></label>
+    <textarea asp-for="Process.Description"></textarea>
+  </div>
 
-    <button type="submit">Save</button>
+  <button type="submit">Save</button>
 </form>
 
 <p><a asp-page="Index">Back</a></p>
