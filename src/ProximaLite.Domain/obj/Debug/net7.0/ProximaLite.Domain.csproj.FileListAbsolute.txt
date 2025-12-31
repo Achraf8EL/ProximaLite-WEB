@@ -1,11 +1,11 @@
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.deps.json
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.dll
+/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.pdb
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.csproj.AssemblyReference.cache
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.GeneratedMSBuildEditorConfig.editorconfig
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.AssemblyInfoInputs.cache
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.AssemblyInfo.cs
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.csproj.CoreCompileInputs.cache
-/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.deps.json
-/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.dll
-/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/bin/Debug/net7.0/ProximaLite.Domain.pdb
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.dll
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/refint/ProximaLite.Domain.dll
 /Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Domain/obj/Debug/net7.0/ProximaLite.Domain.pdb

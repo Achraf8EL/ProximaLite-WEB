@@ -4,27 +4,29 @@
 <h1>Processes</h1>
 
 <p>
-    <a asp-page="Create">Create new process</a>
+  <a id="create-process-link" asp-page="Create">Create</a>
 </p>
 
-<table>
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>CreatedAt (UTC)</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="card">
+  <table>
+      <thead>
+          <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>CreatedAt (UTC)</th>
+          </tr>
+      </thead>
+      <tbody>
 @foreach (var p in Model.Processes)
 {
-        <tr>
-            <td>@p.Id</td>
-            <td>
-                <a asp-page="Details" asp-route-id="@p.Id">@p.Name</a>
-            </td>
-            <td>@p.CreatedAt</td>
-        </tr>
+          <tr>
+              <td>@p.Id</td>
+              <td>
+                  <a class="process-link" asp-page="Details" asp-route-id="@p.Id">@p.Name</a>
+              </td>
+              <td>@p.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+          </tr>
 }
-    </tbody>
-</table>
+      </tbody>
+  </table>
+</div>

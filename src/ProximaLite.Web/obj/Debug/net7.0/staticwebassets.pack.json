@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/ProximaLite.Web.bundle.scp.css"
     },
     {
+      "Id": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/wwwroot/css/site-custom.css",
+      "PackagePath": "staticwebassets/css/site-custom.css"
+    },
+    {
       "Id": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

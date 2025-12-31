@@ -14,4 +14,7 @@ public class Process
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     public List<Step> Steps { get; set; } = new();
+
+    public List<ProcessEvaluation> Evaluations { get; set; } = new();
+
 }

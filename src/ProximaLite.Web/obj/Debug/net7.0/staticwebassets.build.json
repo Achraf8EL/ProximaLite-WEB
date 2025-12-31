@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rZ2NB2lk928pTnctBRO/J2kHjlz8y9zHU7ykOqAW1H0=",
+  "Hash": "aOnpnArw+EsqGVIXHiP5HhSygEWkmL8v/NQVdJIWwlM=",
   "Source": "ProximaLite.Web",
   "BasePath": "_content/ProximaLite.Web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/obj/Debug/net7.0/scopedcss/projectbundle/ProximaLite.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/wwwroot/css/site-custom.css",
+      "SourceId": "ProximaLite.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/wwwroot/",
+      "BasePath": "_content/ProximaLite.Web",
+      "RelativePath": "css/site-custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site-custom.css"
     },
     {
       "Identity": "/Users/achrafelmessaoudi/Desktop/ProximaLite Web/src/ProximaLite.Web/wwwroot/css/site.css",

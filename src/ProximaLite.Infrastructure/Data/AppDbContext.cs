@@ -12,6 +12,9 @@ public class AppDbContext : DbContext
     public DbSet<Process> Processes => Set<Process>();
     public DbSet<Step> Steps => Set<Step>();
 
+    public DbSet<ProcessEvaluation> ProcessEvaluations => Set<ProcessEvaluation>();
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
@@ -56,5 +59,33 @@ public class AppDbContext : DbContext
                 .HasForeignKey(s => s.ProcessId)
                 .OnDelete(DeleteBehavior.Cascade);
         });
+modelBuilder.Entity<ProcessEvaluation>(entity =>
+{
+    entity.ToTable("process_evaluations");
+
+    entity.HasKey(e => e.Id);
+
+    entity.Property(e => e.CreatedAt).IsRequired();
+
+    entity.Property(e => e.TotalDurationMin).IsRequired();
+
+    entity.Property(e => e.TotalCostEuro)
+        .HasPrecision(12, 2)
+        .IsRequired();
+
+    entity.Property(e => e.GlobalYield)
+        .HasPrecision(6, 5) 
+        .IsRequired();
+
+    entity.Property(e => e.Notes)
+        .HasMaxLength(400);
+
+    entity.HasOne(e => e.Process)
+        .WithMany(p => p.Evaluations)
+        .HasForeignKey(e => e.ProcessId)
+        .OnDelete(DeleteBehavior.Cascade);
+});
+
+
     }
 }

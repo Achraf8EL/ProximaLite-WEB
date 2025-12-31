@@ -10,70 +10,137 @@
     return;
 }
 
-<h2>@Model.Process.Name</h2>
-<p>@Model.Process.Description</p>
-<p><strong>Created:</strong> @Model.Process.CreatedAt (UTC)</p>
+<div class="card">
+    <h2>@Model.Process.Name</h2>
+    <p class="small">@Model.Process.Description</p>
+    <span class="badge">Created: @Model.Process.CreatedAt (UTC)</span>
+</div>
 
-<hr />
-
-<h3>Steps</h3>
-
-@if (Model.Process.Steps.Count == 0)
+@if (Model.Kpis != null)
 {
-    <p>No steps yet.</p>
+    <div class="card">
+        <h3>Current KPIs (live)</h3>
+        <ul>
+            <li><strong>Total duration:</strong> @Model.Kpis.TotalDurationMin min</li>
+            <li><strong>Total cost:</strong> @Model.Kpis.TotalCostEuro.ToString("0.00") €</li>
+            <li><strong>Global yield:</strong> @((Model.Kpis.GlobalYeild * 100).ToString("0.00")) %</li>
+        </ul>
+    </div>
 }
-else
-{
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Duration (min)</th>
-                <th>Yield</th>
-                <th>Cost (€)</th>
-            </tr>
-        </thead>
-        <tbody>
+
+<div class="card">
+    <h3>Evaluate</h3>
+
+    <form method="post" asp-page-handler="Evaluate" asp-route-id="@Model.Process!.Id">
+        <div>
+            <label>Notes (optional)</label>
+            <input id="eval-notes" asp-for="Notes" />
+        </div>
+
+        <button id="evaluate-btn" type="submit">Evaluate & Save</button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>Steps</h3>
+
+    @if (Model.Process.Steps.Count == 0)
+    {
+        <p>No steps yet.</p>
+    }
+    else
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Duration (min)</th>
+                    <th>Yield</th>
+                    <th>Cost (€)</th>
+                </tr>
+            </thead>
+            <tbody>
 @foreach (var s in Model.Process.Steps.OrderBy(x => x.Id))
 {
-            <tr>
-                <td>@s.Name</td>
-                <td>@s.DurationMin</td>
-                <td>@s.Yield</td>
-                <td>@s.CostEuro</td>
-            </tr>
+                <tr>
+                    <td>@s.Name</td>
+                    <td>@s.DurationMin</td>
+                    <td>@s.Yield</td>
+                    <td>@s.CostEuro</td>
+                </tr>
 }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    }
+</div>
+
+<div class="card">
+    <h3>Add a step</h3>
+
+    <form method="post" asp-page-handler="AddStep" asp-route-id="@Model.Process!.Id">
+        <div class="form-grid">
+            <div>
+                <label>Name</label>
+                <input id="step-name" asp-for="NewStep.Name" />
+                <span asp-validation-for="NewStep.Name"></span>
+            </div>
+
+            <div>
+                <label>Duration (min)</label>
+                <input id="step-duration" asp-for="NewStep.DurationMin" type="number" min="0" />
+            </div>
+
+            <div>
+    <label>Yield (0 to 1)</label>
+    <input asp-for="NewStep.Yield" id="step-yield" type="number" step="0.0001" min="0" max="1" />
+    <span asp-validation-for="NewStep.Yield"></span>
+</div>
+g
+
+            <div>
+                <label>Cost (€)</label>
+                <input id="step-cost" asp-for="NewStep.CostEuro" type="number" step="0.01" min="0" />
+            </div>
+        </div>
+
+        <button id="add-step-btn" type="submit">Add step</button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>Evaluation history</h3>
+
+    @if (Model.EvaluationHistory.Count == 0)
+    {
+        <p>No evaluations saved yet.</p>
+    }
+    else
+    {
+        <table>
+            <thead>
+                <tr>
+                    <th>Date (UTC)</th>
+                    <th>Total duration (min)</th>
+                    <th>Total cost (€)</th>
+                    <th>Global yield (%)</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+@foreach (var e in Model.EvaluationHistory)
+{
+                <tr>
+                    <td>@e.CreatedAt.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                    <td>@e.TotalDurationMin</td>
+                    <td>@e.TotalCostEuro.ToString("0.00")</td>
+                    <td>@((e.GlobalYield * 100).ToString("0.00"))</td>
+                    <td>@e.Notes</td>
+                </tr>
 }
-
-<hr />
-
-<h3>Add a step</h3>
-
-<form method="post">
-    <div>
-        <label>Name</label>
-        <input asp-for="NewStep.Name" />
-        <span asp-validation-for="NewStep.Name"></span>
-    </div>
-
-    <div>
-        <label>Duration (min)</label>
-        <input asp-for="NewStep.DurationMin" type="number" min="0" />
-    </div>
-
-    <div>
-        <label>Yield (0 to 1)</label>
-        <input asp-for="NewStep.Yield" type="number" step="0.0001" min="0" max="1" />
-    </div>
-
-    <div>
-        <label>Cost (€)</label>
-        <input asp-for="NewStep.CostEuro" type="number" step="0.01" min="0" />
-    </div>
-
-    <button type="submit">Add step</button>
-</form>
+            </tbody>
+        </table>
+    }
+</div>
 
 <p><a asp-page="Index">Back</a></p>
+v
