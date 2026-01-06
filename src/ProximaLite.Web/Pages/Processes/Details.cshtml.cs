@@ -25,7 +25,7 @@ public class DetailsModel : PageModel
     public Step NewStep { get; set; } = new();
 
     [BindProperty]
-    public string? Notes { get; set; } // optionnel : commentaire evaluation
+    public string? Notes { get; set; } 
 
     public async Task<IActionResult> OnGetAsync(int id)
     {
